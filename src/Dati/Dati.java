@@ -6,6 +6,7 @@
 
 package Dati;
 
+import Network.DownloadDati;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -35,6 +36,7 @@ public class Dati {
 		try
 		{
 		    file = new FileWriter (nomeFile+".json");
+                    if(contenuto!=null)file.write(contenuto.toString());
 		    file.close();		
 		}
 		// Catches any error conditions
@@ -128,7 +130,9 @@ public class Dati {
         else
         {
             //se ControllaValidita(...) ritorna false, viene invocata la funzione DonwloadDati(String nomePolo, java.util.Date data) e ritorna JSONObject datiOttuneuti
-            JSONObject datiOttenuti=DownloadDati(nomePolo, data);
+            DownloadDati download = new DownloadDati();
+            
+            JSONObject datiOttenuti=download.OttieniJSON(nomePolo, data);
  
             //chiama una funzione ScriviFile(String nomePolo,JSONObject contenuto) che sovrascrive il file vecchio con i nuovi dati
             ScriviFile(nomePolo,datiOttenuti);

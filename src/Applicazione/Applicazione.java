@@ -7,7 +7,6 @@
 package Applicazione;
 
 import Dati.Universita;
-import java.util.Vector;
 import org.json.simple.JSONObject;
 
 

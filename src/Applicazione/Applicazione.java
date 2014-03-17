@@ -19,6 +19,6 @@ public class Applicazione {
     public static void main(String args[])
     {
         Universita trento = new Universita();
-        JSONObject oggetto = new JSONObject();
+        trento.OttieniDati("Povo1",new java.util.Date());
     }
 }

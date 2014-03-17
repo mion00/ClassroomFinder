@@ -21,7 +21,7 @@ public class Universita {
         polo=new Hashtable<>();
     }
     
-    void OttientiDati(String nomePolo,java.util.Date data)
+    public void OttieniDati(String nomePolo,java.util.Date data)
     {
         if(polo.containsKey(nomePolo)) // se il nome è gia presente controlla che i dati siano aggiornati
         {

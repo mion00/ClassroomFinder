@@ -7,6 +7,7 @@
 package Applicazione;
 
 import Dati.Universita;
+import init.InizializzaDati;
 import org.json.simple.JSONObject;
 
 
@@ -20,5 +21,6 @@ public class Applicazione {
     {
         Universita trento = new Universita();
         trento.OttieniDati("Povo1",new java.util.Date());
+        new InizializzaDati();
     }
 }

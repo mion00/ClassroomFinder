@@ -1,9 +1,0 @@
-{
-    "expire": "1405010800",
-    "value": "File",
-    "items": [
-        {"value": "New", "action": "CreateNewDoc"},
-        {"value": "Open", "action": "OpenDoc"},
-        {"value": "Close", "action": "CloseDoc"}
-    ]
-}

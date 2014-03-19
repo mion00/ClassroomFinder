@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 
-package Dati;
-
+package Database;
 /**
  *
- * @author creamcodifier
+ * @author mion00
  */
-public class Aula {
-    String nome;
-    int poloID;
+public class Dipartimento extends Dati.Dipartimento {
+    public int id;
+ 
 }

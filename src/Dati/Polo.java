@@ -6,11 +6,18 @@
 
 package Dati;
 
+import java.util.List;
+
 /**
  *
  * @author creamcodifier
  */
-public class Aula {
-    String nome;
-    int poloID;
+public class Polo {
+    List<String> nomi;
+    
+    public Polo()
+    {
+        nomi.add("Povo1");
+        nomi.add("Povo2");
+    }
 }

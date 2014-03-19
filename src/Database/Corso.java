@@ -4,20 +4,14 @@
  * and open the template in the editor.
  */
 
-package Dati;
-
-import java.util.List;
+package Database;
 
 /**
  *
- * @author creamcodifier
+ * @author mion00
  */
-public final class NomiPoli {
-    List<String> nomi;
+public class Corso extends Dati.Corso {
+    int id;
+    int DipartimentoID;
     
-    NomiPoli()
-    {
-        nomi.add("Povo1");
-        nomi.add("Povo2");
-    }
 }

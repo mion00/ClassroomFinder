@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package Dati;
+package Database;
 
 /**
  *
- * @author creamcodifier
+ * @author mion00
  */
-public class Aula {
-    String nome;
-    int poloID;
+class Polo extends Dati.Polo {
+    int id;
+    String name;
 }

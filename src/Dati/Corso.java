@@ -8,9 +8,10 @@ package Dati;
 
 /**
  *
- * @author creamcodifier
+ * @author mion00
  */
-public class Aula {
-    String nome;
-    int poloID;
+public class Corso {
+    protected String nome;
+    protected String urlLezione;
+    
 }

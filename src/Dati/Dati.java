@@ -24,13 +24,14 @@ import org.json.simple.JSONValue;
 public class Dati {
     Hashtable<Aula,List<Lezione>> dati;
     
-    void ScriviFile(String nomeFile, JSONObject contenuto)
+    JSONObject ScriviFile(String nomeFile, JSONObject contenuto)
     {
         FileWriter file;		
 		try
 		{
 		    file = new FileWriter (nomeFile+".json");
-                    if(contenuto!=null)file.write(contenuto.toString());
+                    if(contenuto!=null)
+                        file.write(contenuto.toString());
 		    file.close();		
 		}
 		// Catches any error conditions
@@ -39,6 +40,8 @@ public class Dati {
 			System.err.println ("Unable to write to file");
 			System.exit(-1);
 		}
+                contenuto = LeggiFile(nomeFile);
+        return contenuto;
     }
     
     JSONObject LeggiFile(String nomeFile)
@@ -85,7 +88,7 @@ public class Dati {
         } 
         catch (FileNotFoundException e)
         {
-            ScriviFile(nomeFile,contenuto);
+            contenuto = ScriviFile(nomeFile,contenuto);
         }
         
         return contenuto;

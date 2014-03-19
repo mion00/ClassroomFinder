@@ -10,7 +10,7 @@ package Dati;
  *
  * @author creamcodifier
  */
-class Lezione {
+public class Lezione {
     String nome;
     String docente;
     String tipo;
